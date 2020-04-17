@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/")
 public class OperationController {
 
-	@Value("${greeting.message: This value shouldn't be visible}")
+	@Value("${message: This value shouldn't be visible}")
 	String message;
 
 	@RequestMapping(value = "message", produces = "application/json; charset=UTF-8", method = RequestMethod.GET)
 	public ResponseEntity<String> getMessage() {
+		System.out.println("Message: "+message);
 		return new ResponseEntity<String>(message, HttpStatus.OK);
 	}
 }
