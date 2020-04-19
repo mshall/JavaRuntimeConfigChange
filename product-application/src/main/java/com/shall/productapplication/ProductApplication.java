@@ -1,4 +1,4 @@
-package com.progressivecoder.productapplication;
+package com.shall.productapplication;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

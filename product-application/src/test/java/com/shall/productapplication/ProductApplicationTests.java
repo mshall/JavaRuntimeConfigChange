@@ -1,4 +1,4 @@
-package com.progressivecoder.productapplication;
+package com.shall.productapplication;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
