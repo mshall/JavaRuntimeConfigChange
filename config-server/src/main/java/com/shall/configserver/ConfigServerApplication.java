@@ -1,4 +1,4 @@
-package com.progressivecoder.configserver;
+package com.shall.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

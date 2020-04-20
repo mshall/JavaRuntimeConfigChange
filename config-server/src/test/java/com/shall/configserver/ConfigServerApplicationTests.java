@@ -1,4 +1,4 @@
-package com.progressivecoder.configserver;
+package com.shall.configserver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
