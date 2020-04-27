@@ -21,7 +21,7 @@
             <excludes>
                 <exclude>org.springframework:*</exclude>
                 <exclude>org.slf4j:*</exclude>
-                <exclude>com.curisprofound:shared-plugin-interfaces</exclude>
+                <exclude>com.shall.plugins.apis:shared-plugin-interfaces</exclude>
             </excludes>
         </dependencySet>
     </dependencySets>
