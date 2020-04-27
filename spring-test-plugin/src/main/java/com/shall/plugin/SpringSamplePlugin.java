@@ -11,6 +11,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
+import com.shall.plugin.config.ApplicationConfiguration;
+import com.shall.plugin.controllers.PluginController;
+import com.shall.plugin.service.GreetProvider;
 import com.shall.plugins.apis.PluginInterface;
 
 import reactor.core.publisher.Mono;

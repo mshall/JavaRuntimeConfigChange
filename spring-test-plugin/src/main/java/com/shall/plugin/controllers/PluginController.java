@@ -1,4 +1,4 @@
-package com.shall.plugin;
+package com.shall.plugin.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

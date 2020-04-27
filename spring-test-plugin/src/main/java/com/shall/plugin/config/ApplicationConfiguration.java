@@ -1,7 +1,9 @@
-package com.shall.plugin;
+package com.shall.plugin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.shall.plugin.service.GreetProvider;
 
 @Configuration
 public class ApplicationConfiguration {

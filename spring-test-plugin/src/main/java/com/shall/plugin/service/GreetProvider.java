@@ -1,4 +1,4 @@
-package com.shall.plugin;
+package com.shall.plugin.service;
 
 public class GreetProvider {
     public String provide(){
