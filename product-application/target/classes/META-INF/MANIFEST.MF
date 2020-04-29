@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: product-application
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: shall
+Implementation-Vendor-Id: com.progressivecoder
+Build-Jdk: 1.8.0_231
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/product-application
+Created-By: Maven Integration for Eclipse
+

@@ -14,16 +14,8 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 
 @Configuration
 public class AppConfig {
-    @Bean
-    public SpringPluginManager pluginManager() {
-        return new SpringPluginManager();
-    }
-
-    @Bean
-    public RouterFunction<ServerResponse> route() {
-        return RouterFunctions.route(GET("/hello")
-                        .and(accept(MediaType.TEXT_PLAIN)),
-                req -> ServerResponse.ok().body(Mono.just("Reactive endpoint on contaainer"), String.class));
-    }
-
+	@Bean
+	public SpringPluginManager pluginManager() {
+		return new SpringPluginManager();
+	}
 }

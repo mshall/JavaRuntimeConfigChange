@@ -50,12 +50,13 @@ public class PluginConfig implements BeanFactoryAware {
 
     @Bean
     @DependsOn("pluginManager")
-    public RouterFunction<?> pluginEndpoints(PluginManager pm) {
+    public String pluginEndpoints(PluginManager pm) {
         registerMvcEndpoints(pm);
-        return getReactiveRoutes(pm);
+        return "";
+        //return getReactiveRoutes(pm);
     }
 
-    private RouterFunction<?> getReactiveRoutes(PluginManager pm) {
+    /*private RouterFunction<?> getReactiveRoutes(PluginManager pm) {
         RouterFunction<?> base = baseRoot(pm);
         RouterFunction<?> routes = pm.getExtensions(PluginInterface.class).stream()
                 .flatMap(g -> g.reactiveRoutes().stream())
@@ -68,7 +69,7 @@ public class PluginConfig implements BeanFactoryAware {
     private RouterFunction<?> baseRoot(PluginManager pm) {
         return route(GET("/plugins"),
                 req -> ServerResponse.ok().body(Mono.just(pluginNamesMono(pm)), String.class));
-    }
+    }*/
 
     private String pluginNamesMono(PluginManager pm) {
         List<String> identityList = pm.getExtensions(PluginInterface.class).stream()
